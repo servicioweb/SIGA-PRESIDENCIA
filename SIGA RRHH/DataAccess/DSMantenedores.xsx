@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-683" viewPortTop="149" zoom="100">
+    <RH_REM_ISAPRE_XmlElement left="317" top="254" width="5292" height="2805" selected="0" zOrder="1" index="0" expanded="1" />
+    <RH_PER_ANTECEDENTE_PREVIS_XmlElement left="6377" top="307" width="5292" height="2805" selected="0" zOrder="2" index="1" expanded="1" />
+    <RH_PER_ANTECEDENTE_LABORAL_XmlElement left="12169" top="254" width="5292" height="2805" selected="0" zOrder="4" index="2" expanded="1" />
+    <RH_PER_BANCO_XmlElement left="18095" top="254" width="5292" height="2805" selected="0" zOrder="6" index="3" expanded="1" />
+    <RH_PER_UBICACION_FISICA_XmlElement left="24021" top="254" width="5292" height="2805" selected="0" zOrder="15" index="4" expanded="1" />
+    <RH_REM_CENTRO_COSTO_CONTABLE_XmlElement left="29947" top="254" width="5292" height="2805" selected="0" zOrder="17" index="5" expanded="1" />
+    <RH_REM_CENTRO_COSTO_PRESUPUESTO_XmlElement left="35873" top="254" width="5292" height="2805" selected="0" zOrder="18" index="6" expanded="1" />
+    <RH_PER_TIPO_NIVEL_ESTUDIO_XmlElement left="41799" top="254" width="5292" height="2805" selected="0" zOrder="19" index="7" expanded="1" />
+    <RH_REM_TRAMO_ASIGNACION_FAMILIAR_XmlElement left="47725" top="254" width="5292" height="2805" selected="0" zOrder="20" index="8" expanded="1" />
+    <RH_REM_APV_XmlElement left="53651" top="254" width="5292" height="2805" selected="0" zOrder="21" index="9" expanded="1" />
+    <RH_REM_CALIDAD_JURIDICA_XmlElement left="65503" top="254" width="5292" height="2805" selected="0" zOrder="22" index="10" expanded="1" />
+    <RH_REM_CLASIFICACION_EMPLEADO_XmlElement left="71429" top="254" width="5292" height="2805" selected="0" zOrder="23" index="11" expanded="1" />
+    <RH_PER_DEPARTAMENTO_XmlElement left="77355" top="254" width="5292" height="2805" selected="0" zOrder="24" index="12" expanded="1" />
+    <RH_PER_NIVEL_ESTUDIO_XmlElement left="83281" top="254" width="5292" height="2805" selected="0" zOrder="25" index="13" expanded="1" />
+    <RH_PER_MOTIVO_RETIRO_XmlElement left="89207" top="254" width="5292" height="2805" selected="0" zOrder="26" index="14" expanded="1" />
+    <RH_REM_SISTEMA_PREVISIONAL_XmlElement left="106985" top="254" width="5292" height="2805" selected="0" zOrder="27" index="15" expanded="1" />
+    <RH_REM_GRADO_XmlElement left="49847" top="6800" width="9948" height="5662" selected="0" zOrder="28" index="16" expanded="1" />
+    <GEN_ORGANIZACION_XmlElement left="38629" top="5741" width="5291" height="5662" selected="0" zOrder="29" index="17" expanded="1" />
+    <RH_REM_AFP_XmlElement left="1301" top="6767" width="5292" height="3281" selected="0" zOrder="8" index="18" expanded="1" />
+    <RH_REM_AFP_DETALLE_XmlElement left="8175" top="6826" width="6508" height="3281" selected="0" zOrder="10" index="19" expanded="1" />
+    <RH_PER_PROFESION_OFICIO_XmlElement left="16007" top="6826" width="8625" height="3281" selected="0" zOrder="30" index="20" expanded="1" />
+    <RH_REM_ISAPRERH_PER_ANTECEDENTE_PREVIS_XmlKeyref left="5675" top="3999" width="503" height="503" selected="0" zOrder="11" />
+</XSDDesignerLayout>

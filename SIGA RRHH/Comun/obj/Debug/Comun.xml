@@ -1,0 +1,64 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Comun
+</name>
+</assembly>
+<members>
+<member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_EMPLEADO">
+	<summary>Tabla de datos de antecedentes personales</summary>
+</member><member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_ANTECEDENTE_LABORAL">
+	<summary>Tabla de antecedentes laborales</summary>
+</member><member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_ANTECEDENTE_PREVIS">
+	<summary>Tabla de antecedentes previsionales</summary>
+</member><member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_ANTECEDENTE_APV">
+	<summary>Tabla de antecedentes de datos previsionales de ahorro voluntario</summary>
+</member><member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_ANTECEDENTE_CURRI">
+	<summary>Tabla de antecedentes curriculares (estudios)</summary>
+</member><member name="F:cl.presidencia.Argo.Comun.Tablas.RH_PER_ANTECEDENTE_REMUN">
+	<summary>Tabla de antecedentes de datos relativos a remuneración</summary>
+</member><member name="T:cl.presidencia.Argo.Comun.Tablas">
+	<summary>Correponde a las constantes de nombres de objetos de la base de datos del Sistema.
+ </summary>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.GetUploadedFiles(System.Data.DataSet@,System.String)">
+	<summary>
+ Gets from the server a list of uploaded files into a dataSet
+ </summary>
+	<param name="ds">The dataset</param>
+	<param name="table">The table in the dataset</param>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.UploadFile(System.String,System.IO.Stream,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Uploads a file to the database server.
+ </summary>
+	<param name="fileName">The filename of the picture to be uploaded</param>
+	<returns>The id of the file on the server.</returns>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.DownloadFile(System.Int64,System.String@)">
+	<summary>
+ Wrapper for downloading a file from a database.
+ </summary>
+	<param name="kFileName">The Unique ID of the file in database</param>
+	<param name="fileName">The file name as it was stored in the database.</param>
+	<returns>The byte array required OR null if the ID is not found</returns>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.ConnectionString">
+	<summary>
+ Returns the connection string for connecting to the database
+ </summary>
+	<returns>The Connection string.</returns>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.uploadFileToDatabase(System.Byte[],System.String,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Uploades a file to an SQL Server.
+ </summary>
+	<param name="picture">A byte array that contains the information to be uploaded.</param>
+	<param name="fileName">The file name asociated with that byte array.</param>
+	<returns>The unique ID of the file on the server OR -1 if an error occurs. </returns>
+</member><member name="M:cl.presidencia.Argo.Comun.CargarPictures.downloadFileFromDatabase(System.Int64,System.String@)">
+	<summary>
+ Downloades a file from a database according to the unique id in that database.
+ </summary>
+	<param name="kFile">The ID of the file in the database</param>
+	<param name="FileName">The filename of the file as it was stored in the database.</param>
+	<returns>A byte array containing the information required.</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E50464ED-2123-44AB-876E-9A20F9F30C3B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>siga</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>cl.presidencia.Argo.WinUI</RootNamespace>
+    <StartupObject>cl.presidencia.Argo.WinUI.main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>siga.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>siga.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design">
+      <Name>CrystalDecisions.CrystalReports.Design</Name>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Business Objects\3.0\managed\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+      <AssemblyFolderKey>hklm\business objects 11 .net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v10.1">
+      <Name>DevExpress.Data.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1">
+      <Name>DevExpress.Utils.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.1">
+      <Name>DevExpress.Xpo.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.1">
+      <Name>DevExpress.XtraBars.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.1">
+      <Name>DevExpress.XtraEditors.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.1">
+      <Name>DevExpress.XtraGrid.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.1">
+      <Name>DevExpress.XtraLayout.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.1">
+      <Name>DevExpress.XtraNavBar.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.1">
+      <Name>DevExpress.XtraPivotGrid.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.1.Core">
+      <Name>DevExpress.XtraPivotGrid.v10.1.Core</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.1">
+      <Name>DevExpress.XtraPrinting.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v10.1">
+      <Name>DevExpress.XtraScheduler.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Core">
+      <Name>DevExpress.XtraScheduler.v10.1.Core</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Reporting.Extensions">
+      <Name>DevExpress.XtraScheduler.v10.1.Reporting.Extensions</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v10.1">
+      <Name>DevExpress.XtraTreeList.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.1">
+      <Name>DevExpress.XtraVerticalGrid.v10.1</Name>
+      <AssemblyFolderKey>hklm\developer express .net v6.3</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.2.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Componentes\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Componentes\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Componentes\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Sign, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Componentes\Sign.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controles\ctrBuscarEmpleadoPorApellido.Designer.vb">
+      <DependentUpon>ctrBuscarEmpleadoPorApellido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ctrBuscarEmpleadoPorApellido.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\frmEnDesarrollo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmRepositorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisCargasFamiliares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisEmpleadosDIPRES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisEventosAdministrativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisHorasCompensadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisMaestroEmpleadoDetallado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAnalisisRatificacionHorasExtras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAntecedenteCurricular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAntecedentesAcademicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAsignarCertificadoCapacitacion.Designer.vb">
+      <DependentUpon>frmAsignarCertificadoCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmAsignarCertificadoCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmAsignarParticipantesCapacitacion.Designer.vb">
+      <DependentUpon>frmAsignarParticipantesCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmAsignarParticipantesCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmBinario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCambioEstadoCargaFam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCambioEstadoCargaFamiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCambioSituacionLaboral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCapacitacionesPorAnoYEstamento.Designer.vb">
+      <DependentUpon>frmCapacitacionesPorAnoYEstamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmCapacitacionesPorAnoYEstamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCapacitacionesPorEmpleado.Designer.vb">
+      <DependentUpon>frmCapacitacionesPorEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmCapacitacionesPorEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCargaFamiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCargaFamiliarActualizaFichaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmChequeEmision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmChequeRegistro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmChequesViatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmComparaDatosIntranetConDatoFichaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmControlAsistenciaDepartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmControlAsistenciaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmCrearCapacitacion.Designer.vb">
+      <DependentUpon>frmCrearCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmCrearCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmDatosAnualHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmFeriadoLegalEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmFichaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmGenerarResumenMensualHrsExtrasAtraso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmHistoriaEventosAdministrativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmHistoriaViaticosPorMemo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmHojaVidaLaboral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmHorasExtrasEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmHorasExtrasPagadasVSRatificadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmInfListadoPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmInformeAtrasos.Designer.vb">
+      <DependentUpon>frmInformeAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmInformeAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmInformeHorasNoRatificadas.Designer.vb">
+      <DependentUpon>frmInformeHorasNoRatificadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmInformeHorasNoRatificadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmLicenciaMedicaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmLicenciaMedicaInformeCalculo.Designer.vb">
+      <DependentUpon>frmLicenciaMedicaInformeCalculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\frmLicenciaMedicaInformeCalculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmLicenciaMedicaInformeGestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmMarcasFaltantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmPagoLicenciaMedica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmPermisoAdministrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmPermisoAdministrativoSinGoceSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmPermisoPaternal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmPermisoPorDuelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmResolucionViatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmRetiroEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmSaldoDiasEventosAdministrativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmSaldoDiasFeriadoLegal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmSaldoDiasPermisoAdministrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmSaldoDiasPermisoPaternal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmTraspasaMarcasyHorasExtras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal\frmViatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Portada\frmBienvenida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAjusteValoresPeriodicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAnalisisLiquidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAnalisisViaticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAprobarAsignacionRemuneracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmArchivoBanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAsientoContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmAsientoPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmBonoModernizacionDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCalculoSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCalculoSueldoHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCalculoSuplementaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCalculoSuplementariaHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCentralizacionContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCierreMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmCierreProcesoSuplementario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmDiferenciaRecalculoBonoModernizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmEmpleadoInactivoConLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmEndeudamientoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmEnviarHonorariosADexon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmEnviarTesoreria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmGeneraArchivoPlanoBancoRemuneracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmGeneraArchivoPlanoImposiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmGeneraAsignaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmGeneraEmpleadoBonoModernizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmGeneraItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmImpuestoSegundaCategoria.Designer.vb">
+      <DependentUpon>frmImpuestoSegundaCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remuneraciones\frmImpuestoSegundaCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmIngresoHorasExtrasAprobadasDepto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemesEndeudamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemGenerado.Designer.vb">
+      <DependentUpon>frmItemGenerado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemGenerado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemGenerarMovimiento.Designer.vb">
+      <DependentUpon>frmItemGenerarMovimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemGenerarMovimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemRelacionado.Designer.vb">
+      <DependentUpon>frmItemRelacionado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remuneraciones\frmItemRelacionado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmMantencionItemEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmMantencionItemPeriodo_ImportarPlanilla.Designer.vb">
+      <DependentUpon>frmMantencionItemPeriodo_ImportarPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Remuneraciones\frmMantencionItemPeriodo_ImportarPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmMantencionItemPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmReajuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmReajusteEUS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmRecalcularEmpleadoBonoModernizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmResumenMovimientoMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmSuplementariaDiferecias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmTablaImpuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmValidacionHorasExtrasRatificadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\_frmFiltroLiquidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmAnalisisPersonalFueraDotacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCuadroComparativoHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroAnexoTrabajadoresINP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroAporteBienestar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroBonificacionRetiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroInformeCurri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remuneraciones\frmFiltroLibroHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroLibroRemunera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroLiquidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroLiquidacionesPorEmpleado.Designer.vb">
+      <DependentUpon>frmFiltroLiquidacionesPorEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroLiquidacionesPorEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroMutualDeSeguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroNominaFotoFuncionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroNominaFuncionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroPlanillaCotPrev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroPlanillaCotSalud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroResolucionHorasExtras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroResolucionHorasExtrasAprobadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroResumenPrevisional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroResumenSalud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptAntiguedadEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptCargaFamiliarValorizado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptHorasExtrasPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptLiquidosAPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptNominaEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroRptResumenPrevisionalAPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFiltroSeguroInvalidezSobrev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmInformeDetalladoHonorario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmPresupuestoAnualHonorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmResumenItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\UtilCrystalReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reportes\ventanaReporte.Designer.vb">
+      <DependentUpon>ventanaReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ventanaReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmAFP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmAPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmAsignacionFamiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmBancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmCalidadJuridica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmClasificacionEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\FrmCostoContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\FrmCostoPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmDeptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmEUS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmFestivos.Designer.vb">
+      <DependentUpon>frmFestivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmFestivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmImpuestoAcumulado.Designer.vb">
+      <DependentUpon>frmImpuestoAcumulado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmImpuestoAcumulado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmIsapres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmMotivoRetiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmNivelEstudio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmOrganizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmProfesiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas Maestras\frmUbicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tesoreria\frmEmisionChequeHonorario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tesoreria\frmEmisionMemorandumViatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tesoreria\frmRendicionViaticoPorMemo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Controles\ctrBuscarEmpleadoPorApellido.resx">
+      <DependentUpon>ctrBuscarEmpleadoPorApellido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmEnDesarrollo.resx">
+      <DependentUpon>frmEnDesarrollo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmRepositorio.resx">
+      <DependentUpon>frmRepositorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisAtrasos.resx">
+      <DependentUpon>frmAnalisisAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisCargasFamiliares.resx">
+      <DependentUpon>frmAnalisisCargasFamiliares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisEmpleadosDIPRES.resx">
+      <DependentUpon>frmAnalisisEmpleadosDIPRES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisEventosAdministrativos.resx">
+      <DependentUpon>frmAnalisisEventosAdministrativos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisHorasCompensadas.resx">
+      <DependentUpon>frmAnalisisHorasCompensadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisMaestroEmpleadoDetallado.resx">
+      <DependentUpon>frmAnalisisMaestroEmpleadoDetallado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAnalisisRatificacionHorasExtras.resx">
+      <DependentUpon>frmAnalisisRatificacionHorasExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAntecedenteCurricular.resx">
+      <DependentUpon>frmAntecedenteCurricular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAntecedentesAcademicos.resx">
+      <DependentUpon>frmAntecedentesAcademicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAsignarCertificadoCapacitacion.resx">
+      <DependentUpon>frmAsignarCertificadoCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmAsignarParticipantesCapacitacion.resx">
+      <DependentUpon>frmAsignarParticipantesCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmBinario.resx">
+      <DependentUpon>frmBinario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCambioEstadoCargaFam.resx">
+      <DependentUpon>frmCambioEstadoCargaFam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCambioEstadoCargaFamiliar.resx">
+      <DependentUpon>frmCambioEstadoCargaFamiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCambioSituacionLaboral.resx">
+      <DependentUpon>frmCambioSituacionLaboral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCapacitacionesPorAnoYEstamento.resx">
+      <DependentUpon>frmCapacitacionesPorAnoYEstamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCapacitacionesPorEmpleado.resx">
+      <DependentUpon>frmCapacitacionesPorEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCargaFamiliar.resx">
+      <DependentUpon>frmCargaFamiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCargaFamiliarActualizaFichaEmpleado.resx">
+      <DependentUpon>frmCargaFamiliarActualizaFichaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmChequeEmision.resx">
+      <DependentUpon>frmChequeEmision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmChequeRegistro.resx">
+      <DependentUpon>frmChequeRegistro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmChequesViatico.resx">
+      <DependentUpon>frmChequesViatico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmComparaDatosIntranetConDatoFichaEmpleado.resx">
+      <DependentUpon>frmComparaDatosIntranetConDatoFichaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmControlAsistenciaDepartamento.resx">
+      <DependentUpon>frmControlAsistenciaDepartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmControlAsistenciaEmpleado.resx">
+      <DependentUpon>frmControlAsistenciaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmCrearCapacitacion.resx">
+      <DependentUpon>frmCrearCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmDatosAnualHonorarios.resx">
+      <DependentUpon>frmDatosAnualHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmFeriadoLegalEmpleado.resx">
+      <DependentUpon>frmFeriadoLegalEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmFichaEmpleado.resx">
+      <DependentUpon>frmFichaEmpleado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmGenerarResumenMensualHrsExtrasAtraso.resx">
+      <DependentUpon>frmGenerarResumenMensualHrsExtrasAtraso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmHistoriaEventosAdministrativos.resx">
+      <DependentUpon>frmHistoriaEventosAdministrativos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmHistoriaViaticosPorMemo.resx">
+      <DependentUpon>frmHistoriaViaticosPorMemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmHojaVidaLaboral.resx">
+      <DependentUpon>frmHojaVidaLaboral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmHorasExtrasEmpleado.resx">
+      <DependentUpon>frmHorasExtrasEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmHorasExtrasPagadasVSRatificadas.resx">
+      <DependentUpon>frmHorasExtrasPagadasVSRatificadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmInfListadoPersonal.resx">
+      <DependentUpon>frmInfListadoPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmInformeAtrasos.resx">
+      <DependentUpon>frmInformeAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmInformeHorasNoRatificadas.resx">
+      <DependentUpon>frmInformeHorasNoRatificadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmLicenciaMedicaDetalle.resx">
+      <DependentUpon>frmLicenciaMedicaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmLicenciaMedicaInformeCalculo.resx">
+      <DependentUpon>frmLicenciaMedicaInformeCalculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmLicenciaMedicaInformeGestion.resx">
+      <DependentUpon>frmLicenciaMedicaInformeGestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmMarcasFaltantes.resx">
+      <DependentUpon>frmMarcasFaltantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmPagoLicenciaMedica.resx">
+      <DependentUpon>frmPagoLicenciaMedica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmPermisoAdministrativo.resx">
+      <DependentUpon>frmPermisoAdministrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmPermisoAdministrativoSinGoceSueldo.resx">
+      <DependentUpon>frmPermisoAdministrativoSinGoceSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmPermisoPaternal.resx">
+      <DependentUpon>frmPermisoPaternal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmPermisoPorDuelo.resx">
+      <DependentUpon>frmPermisoPorDuelo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmResolucionViatico.resx">
+      <DependentUpon>frmResolucionViatico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmRetiroEmpleado.resx">
+      <DependentUpon>frmRetiroEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmSaldoDiasEventosAdministrativos.resx">
+      <DependentUpon>frmSaldoDiasEventosAdministrativos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmSaldoDiasFeriadoLegal.resx">
+      <DependentUpon>frmSaldoDiasFeriadoLegal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmSaldoDiasPermisoAdministrativo.resx">
+      <DependentUpon>frmSaldoDiasPermisoAdministrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmSaldoDiasPermisoPaternal.resx">
+      <DependentUpon>frmSaldoDiasPermisoPaternal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmTraspasaMarcasyHorasExtras.resx">
+      <DependentUpon>frmTraspasaMarcasyHorasExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal\frmViatico.resx">
+      <DependentUpon>frmViatico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Portada\frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAjusteValoresPeriodicos.resx">
+      <DependentUpon>frmAjusteValoresPeriodicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAnalisisLiquidaciones.resx">
+      <DependentUpon>frmAnalisisLiquidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAnalisisViaticos.resx">
+      <DependentUpon>frmAnalisisViaticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAprobarAsignacionRemuneracion.resx">
+      <DependentUpon>frmAprobarAsignacionRemuneracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmArchivoBanco.resx">
+      <DependentUpon>frmArchivoBanco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAsientoContable.resx">
+      <DependentUpon>frmAsientoContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmAsientoPresupuesto.resx">
+      <DependentUpon>frmAsientoPresupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmBonoModernizacionDetalle.resx">
+      <DependentUpon>frmBonoModernizacionDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCalculoSueldo.resx">
+      <DependentUpon>frmCalculoSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCalculoSueldoHonorarios.resx">
+      <DependentUpon>frmCalculoSueldoHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCalculoSuplementaria.resx">
+      <DependentUpon>frmCalculoSuplementaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCalculoSuplementariaHonorarios.resx">
+      <DependentUpon>frmCalculoSuplementariaHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCentralizacionContable.resx">
+      <DependentUpon>frmCentralizacionContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCierreMensual.resx">
+      <DependentUpon>frmCierreMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmCierreProcesoSuplementario.resx">
+      <DependentUpon>frmCierreProcesoSuplementario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmDiferenciaRecalculoBonoModernizacion.resx">
+      <DependentUpon>frmDiferenciaRecalculoBonoModernizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmEmpleadoInactivoConLiquidacion.resx">
+      <DependentUpon>frmEmpleadoInactivoConLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmEndeudamientoEmpleado.resx">
+      <DependentUpon>frmEndeudamientoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmEnviarHonorariosADexon.resx">
+      <DependentUpon>frmEnviarHonorariosADexon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmEnviarTesoreria.resx">
+      <DependentUpon>frmEnviarTesoreria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmGeneraArchivoPlanoBancoRemuneracion.resx">
+      <DependentUpon>frmGeneraArchivoPlanoBancoRemuneracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmGeneraArchivoPlanoImposiciones.resx">
+      <DependentUpon>frmGeneraArchivoPlanoImposiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmGeneraAsignaciones.resx">
+      <DependentUpon>frmGeneraAsignaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmGeneraEmpleadoBonoModernizacion.resx">
+      <DependentUpon>frmGeneraEmpleadoBonoModernizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmGeneraItem.resx">
+      <DependentUpon>frmGeneraItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmImpuestoSegundaCategoria.resx">
+      <DependentUpon>frmImpuestoSegundaCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmIngresoHorasExtrasAprobadasDepto.resx">
+      <DependentUpon>frmIngresoHorasExtrasAprobadasDepto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmItemes.resx">
+      <DependentUpon>frmItemes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmItemesEndeudamiento.resx">
+      <DependentUpon>frmItemesEndeudamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmItemGenerado.resx">
+      <DependentUpon>frmItemGenerado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmItemGenerarMovimiento.resx">
+      <DependentUpon>frmItemGenerarMovimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmItemRelacionado.resx">
+      <DependentUpon>frmItemRelacionado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmMantencionItemEmpleado.resx">
+      <DependentUpon>frmMantencionItemEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmMantencionItemPeriodo_ImportarPlanilla.resx">
+      <DependentUpon>frmMantencionItemPeriodo_ImportarPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmMantencionItemPeriodo.resx">
+      <DependentUpon>frmMantencionItemPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmReajuste.resx">
+      <DependentUpon>frmReajuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmReajusteEUS.resx">
+      <DependentUpon>frmReajusteEUS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmRecalcularEmpleadoBonoModernizacion.resx">
+      <DependentUpon>frmRecalcularEmpleadoBonoModernizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmResumenMovimientoMensual.resx">
+      <DependentUpon>frmResumenMovimientoMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmSuplementariaDiferecias.resx">
+      <DependentUpon>frmSuplementariaDiferecias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmTablaImpuestos.resx">
+      <DependentUpon>frmTablaImpuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmValidacionHorasExtrasRatificadas.resx">
+      <DependentUpon>frmValidacionHorasExtrasRatificadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\_frmFiltroLiquidaciones.resx">
+      <DependentUpon>_frmFiltroLiquidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmAnalisisPersonalFueraDotacion.resx">
+      <DependentUpon>frmAnalisisPersonalFueraDotacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmCuadroComparativoHonorarios.resx">
+      <DependentUpon>frmCuadroComparativoHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroAnexoTrabajadoresINP.resx">
+      <DependentUpon>frmFiltroAnexoTrabajadoresINP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroAporteBienestar.resx">
+      <DependentUpon>frmFiltroAporteBienestar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroBonificacionRetiro.resx">
+      <DependentUpon>frmFiltroBonificacionRetiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroInformeCurri.resx">
+      <DependentUpon>frmFiltroInformeCurri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remuneraciones\frmFiltroLibroHonorarios.resx">
+      <DependentUpon>frmFiltroLibroHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroLibroRemunera.resx">
+      <DependentUpon>frmFiltroLibroRemunera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroLiquidaciones.resx">
+      <DependentUpon>frmFiltroLiquidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroLiquidacionesPorEmpleado.resx">
+      <DependentUpon>frmFiltroLiquidacionesPorEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroMutualDeSeguridad.resx">
+      <DependentUpon>frmFiltroMutualDeSeguridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroNominaFotoFuncionarios.resx">
+      <DependentUpon>frmFiltroNominaFotoFuncionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroNominaFuncionarios.resx">
+      <DependentUpon>frmFiltroNominaFuncionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroPlanillaCotPrev.resx">
+      <DependentUpon>frmFiltroPlanillaCotPrev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroPlanillaCotSalud.resx">
+      <DependentUpon>frmFiltroPlanillaCotSalud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroResolucionHorasExtras.resx">
+      <DependentUpon>frmFiltroResolucionHorasExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroResolucionHorasExtrasAprobadas.resx">
+      <DependentUpon>frmFiltroResolucionHorasExtrasAprobadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroResumenPrevisional.resx">
+      <DependentUpon>frmFiltroResumenPrevisional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroResumenSalud.resx">
+      <DependentUpon>frmFiltroResumenSalud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptAntiguedadEmpleados.resx">
+      <DependentUpon>frmFiltroRptAntiguedadEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptCargaFamiliarValorizado.resx">
+      <DependentUpon>frmFiltroRptCargaFamiliarValorizado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptHorasExtrasPeriodo.resx">
+      <DependentUpon>frmFiltroRptHorasExtrasPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptLiquidosAPago.resx">
+      <DependentUpon>frmFiltroRptLiquidosAPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptNominaEmpleados.resx">
+      <DependentUpon>frmFiltroRptNominaEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroRptResumenPrevisionalAPV.resx">
+      <DependentUpon>frmFiltroRptResumenPrevisionalAPV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFiltroSeguroInvalidezSobrev.resx">
+      <DependentUpon>frmFiltroSeguroInvalidezSobrev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmInformeDetalladoHonorario.resx">
+      <DependentUpon>frmInformeDetalladoHonorario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmPresupuestoAnualHonorarios.resx">
+      <DependentUpon>frmPresupuestoAnualHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmResumenItems.resx">
+      <DependentUpon>frmResumenItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ventanaReporte.resx">
+      <DependentUpon>ventanaReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmAFP.resx">
+      <DependentUpon>frmAFP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmAPV.resx">
+      <DependentUpon>frmAPV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmAsignacionFamiliar.resx">
+      <DependentUpon>frmAsignacionFamiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmBancos.resx">
+      <DependentUpon>frmBancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmCalidadJuridica.resx">
+      <DependentUpon>frmCalidadJuridica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmClasificacionEmpleado.resx">
+      <DependentUpon>frmClasificacionEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\FrmCostoContable.resx">
+      <DependentUpon>FrmCostoContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\FrmCostoPresupuesto.resx">
+      <DependentUpon>FrmCostoPresupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmDeptos.resx">
+      <DependentUpon>frmDeptos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmEUS.resx">
+      <DependentUpon>frmEUS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmFestivos.resx">
+      <DependentUpon>frmFestivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmGrado.resx">
+      <DependentUpon>frmGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmImpuestoAcumulado.resx">
+      <DependentUpon>frmImpuestoAcumulado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmIsapres.resx">
+      <DependentUpon>frmIsapres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmMotivoRetiro.resx">
+      <DependentUpon>frmMotivoRetiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmNivelEstudio.resx">
+      <DependentUpon>frmNivelEstudio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmOrganizacion.resx">
+      <DependentUpon>frmOrganizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmProfesiones.resx">
+      <DependentUpon>frmProfesiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas Maestras\frmUbicacion.resx">
+      <DependentUpon>frmUbicacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tesoreria\frmEmisionChequeHonorario.resx">
+      <DependentUpon>frmEmisionChequeHonorario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tesoreria\frmEmisionMemorandumViatico.resx">
+      <DependentUpon>frmEmisionMemorandumViatico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tesoreria\frmRendicionViaticoPorMemo.resx">
+      <DependentUpon>frmRendicionViaticoPorMemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Componentes\baseCalculo.xls" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGA.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessFacade\BusinessFacade.vbproj">
+      <Project>{6C64905F-6422-4F78-ACFB-8977BC66B8A5}</Project>
+      <Name>BusinessFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessRules\BusinessRules.vbproj">
+      <Project>{7589C355-51B8-4DE1-A94F-C17405922BC7}</Project>
+      <Name>BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comun\Comun.vbproj">
+      <Project>{9084CD2D-BB5C-47B8-BE96-941C00794318}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.vbproj">
+      <Project>{10439C2A-9C9A-4B5B-BEED-7220ECF75349}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\presidencia.seguridad\presidencia.seguridad.vbproj">
+      <Project>{5F6BD0F3-0DBE-438C-AD88-812A9DC22B9D}</Project>
+      <Name>presidencia.seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reportes\Reportes.vbproj">
+      <Project>{E0996FE2-8A23-4E54-A303-633D94C4040F}</Project>
+      <Name>Reportes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Componentes\Interop.Microsoft.Office.Core.dll" />
+    <Content Include="Componentes\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Componentes\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="Componentes\Sign.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TDLFILE="DAP.tdl" TDLELEMENTTYPE="WinUI" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

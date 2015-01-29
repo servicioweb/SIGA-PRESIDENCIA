@@ -1,0 +1,10 @@
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\cl.presidencia.seguridad.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\cl.presidencia.seguridad.pdb
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\cl.presidencia.seguridad.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\Comun.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\Comun.pdb
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\bin\Comun.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\obj\Debug\presidencia.seguridad.vbprojResolveAssemblyReference.cache
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\obj\Debug\cl.presidencia.seguridad.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\obj\Debug\cl.presidencia.seguridad.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\presidencia.seguridad\obj\Debug\cl.presidencia.seguridad.pdb

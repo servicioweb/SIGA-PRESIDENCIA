@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSAnalisisLiquidaciones" targetNamespace="http://tempuri.org/DSAnalisisLiquidaciones.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DSAnalisisLiquidaciones.xsd"
+	xmlns:mstns="http://tempuri.org/DSAnalisisLiquidaciones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSAnalisisLiquidaciones" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VW_ANALISIS_LIQUIDACIONES">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LIQUIDACION_ID" type="xs:long" />
+							<xs:element name="EMPLEADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="RUT" type="xs:int" />
+							<xs:element name="DV" type="xs:string" />
+							<xs:element name="APELLIDO_PATERNO" type="xs:string" />
+							<xs:element name="APELLIDO_MATERNO" type="xs:string" />
+							<xs:element name="NOMBRES" type="xs:string" />
+							<xs:element name="ANO" type="xs:short" minOccurs="0" />
+							<xs:element name="MES" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="PERIODO" type="xs:string" minOccurs="0" />
+							<xs:element name="ESTAMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="GRADO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALIDAD_JURIDICA" type="xs:string" minOccurs="0" />
+							<xs:element name="CLASIFICACION_EMPLEADO" type="xs:string" minOccurs="0" />
+							<xs:element name="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEM_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION_LARGA" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_HORAS_EXTRAS" type="xs:int" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DEPTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" />
+							<xs:element name="ITEM_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="ID_LIQUIDACION_ENC" type="xs:int" minOccurs="0" />
+							<xs:element name="SECUENCIA_IMPRESION" type="xs:short" minOccurs="0" />
+							<xs:element name="CALIDAD_JURIDICA_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="NOMBRE_EMPLEADO" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO_ITEM" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO_CALCULO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

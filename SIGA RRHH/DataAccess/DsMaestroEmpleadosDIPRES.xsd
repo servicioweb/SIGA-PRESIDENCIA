@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DsMaestroEmpleadosDIPRES" targetNamespace="http://www.tempuri.org/DsMaestroEmpleadosDIPRES.xsd" xmlns:mstns="http://www.tempuri.org/DsMaestroEmpleadosDIPRES.xsd" xmlns="http://www.tempuri.org/DsMaestroEmpleadosDIPRES.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DsMaestroEmpleadosDIPRES" msdata:IsDataSet="true" msdata:Locale="es-CL">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="VW_MAESTRO_EMPLEADO_DIPRES">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ESTADO_REGISTRO" type="xs:string" minOccurs="0" />
+                            <xs:element name="DESCRIPCION_PERIODO" type="xs:string" minOccurs="0" />
+                            <xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" />
+                            <xs:element name="ESTADO_EMPLEADO" type="xs:string" />
+                            <xs:element name="EMPLEADO_ID" type="xs:short" />
+                            <xs:element name="RUT" type="xs:int" />
+                            <xs:element name="DV" type="xs:string" />
+                            <xs:element name="NOMBRE_EMPLEADO" type="xs:string" minOccurs="0" />
+                            <xs:element name="CALIDAD_JURIDICA" type="xs:string" minOccurs="0" />
+                            <xs:element name="ESTAMENTO_DIPRES" type="xs:string" minOccurs="0" />
+                            <xs:element name="ESTAMENTO_RRHH" type="xs:string" minOccurs="0" />
+                            <xs:element name="CLASIFICACION_EMPLEADO" type="xs:string" minOccurs="0" />
+                            <xs:element name="GRADO" type="xs:string" minOccurs="0" />
+                            <xs:element name="FECHA_ING_INSTITUCION" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="SEXO" type="xs:string" minOccurs="0" />
+                            <xs:element name="FECHA_RETIRO" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="MOTIVO_RETIRO" type="xs:string" minOccurs="0" />
+                            <xs:element name="RETIRO_APLICA_DIPRES" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="EDAD" type="xs:int" minOccurs="0" />
+                            <xs:element name="SISTEMA_PREVISIONAL" type="xs:string" minOccurs="0" />
+                            <xs:element name="SISTEMA_PREVISIONAL_SALUD" type="xs:string" minOccurs="0" />
+                            <xs:element name="CANTIDAD" type="xs:int" minOccurs="0" />
+                            <xs:element name="TIPO_MOVIMIENTO" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

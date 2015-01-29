@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-180" viewPortTop="693" zoom="100">
+    <VW_BENEFICIARIOS_SUSESO_XmlElement left="1746" top="714" width="11536" height="4234" selected="0" zOrder="1" index="0" expanded="1" />
+    <VW_CAUSANTES_SUSESO_XmlElement left="17517" top="2197" width="10530" height="6138" selected="0" zOrder="2" index="1" expanded="1" />
+    <VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESO_XmlElement left="1720" top="6271" width="11324" height="5662" selected="0" zOrder="4" index="2" expanded="1" />
+    <Relacion_Beneficiario_Causantes_XmlKeyref left="14447" top="5027" width="503" height="503" selected="0" zOrder="5" />
+    <Relacion_Causante_Beneficios_XmlKeyref left="15389" top="7449" width="503" height="503" selected="0" zOrder="9" />
+</XSDDesignerLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="2243" viewPortTop="0" zoom="100">
+    <RH_REM_ASIENTO_CONTABLE_DETALLE_XmlElement left="4763" top="741" width="11747" height="5926" selected="0" zOrder="1" index="0" expanded="1" />
+    <ASIENTO_CONTABLE_XmlElement left="18336" top="3995" width="9631" height="5927" selected="0" zOrder="2" index="1" expanded="1" />
+    <RH_REM_ASIENTO_CONTABLE_XmlElement left="1217" top="8387" width="10689" height="2964" selected="0" zOrder="3" index="2" expanded="1" />
+</XSDDesignerLayout>

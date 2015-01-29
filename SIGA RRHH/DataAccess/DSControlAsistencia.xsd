@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSControlAsistencia" targetNamespace="http://tempuri.org/DSControlAsistencia.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DSControlAsistencia.xsd"
+	xmlns:mstns="http://tempuri.org/DSControlAsistencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSControlAsistencia" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_PER_CONTROL_ASISTENCIA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ASISTENCIA_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="EMPLEADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_ASISTENCIA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_ENTRADA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_SALIDA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORAS_TRABAJADAS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORAS_EXTRAS_DIURNAS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORAS_EXTRAS_NOCTURNAS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MEDIO_DIA" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HORAS_ATRASOS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORAS_EXTRAS_DIURNAS_AUTORIZADAS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORAS_EXTRAS_NOCTURNAS_AUTORIZADAS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MEDIO_DIA_AUTORIZADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TIPO_EVENTO_ADMIN_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="HORAS_ATRASOS_AUTORIZADOS" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ANO_REAL" type="xs:short" minOccurs="0" />
+							<xs:element name="MES_REAL" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="OBSERVACIONES" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSControlAsistenciaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_CONTROL_ASISTENCIA" />
+			<xs:field xpath="mstns:ASISTENCIA_ID" />
+		</xs:unique>
+		<xs:unique name="DSControlAsistenciaKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_CONTROL_ASISTENCIA" />
+			<xs:field xpath="mstns:ASISTENCIA_ID" />
+		</xs:unique>
+		<xs:unique name="DSControlAsistenciaKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_CONTROL_ASISTENCIA" />
+			<xs:field xpath="mstns:ASISTENCIA_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSViatico" targetNamespace="http://www.tempuri.org/DSViatico.xsd" xmlns:mstns="http://www.tempuri.org/DSViatico.xsd"
+	xmlns="http://www.tempuri.org/DSViatico.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSViatico" msdata:IsDataSet="true" msdata:Locale="es-CL">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_PER_VIATICO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="VIATICO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TIPO_RESOLUCION" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="NRO_MEMORANDUM_INTERNO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MEMORANDUM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MOTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="NRO_RESOLUCION" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_RESOLUCION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="TIPO_EVENTO_ADMIN_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DEPTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_VIATICOS_DETALLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:int" />
+							<xs:element name="EMPLEADO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:short" />
+							<xs:element name="RUT" type="xs:int" />
+							<xs:element name="DV" type="xs:string" />
+							<xs:element name="NOMBRE_EMPLEADO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="VIATICO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TIPO_EVENTO_ADMIN_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="MOTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ANO" type="xs:short" minOccurs="0" />
+							<xs:element name="MES" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="FECHA_INICIO" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_TERMINO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DIAS" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DEPTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="ESTAMENTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTAMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="RESOLUCION" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALIDAD_JURIDICA_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CALIDAD_JURIDICA" type="xs:string" minOccurs="0" />
+							<xs:element name="CLASIFICACION_EMPLEADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="CLASIFICACION_EMPLEADO" type="xs:string" minOccurs="0" />
+							<xs:element name="GRADO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="GRADO" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION_PERIODO" type="xs:string" minOccurs="0" />
+							<xs:element name="VIATICO_DETALLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="NRO_MEMORANDUM_INTERNO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MEMORANDUM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NRO_RESOLUCION" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_RESOLUCION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DEPTO_VIATICO" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="DEPTO_MEMO_VIATICO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MEMORANDUM_STRING" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="PAIS_DESTINO" type="xs:string" />
+							<xs:element name="REGION_DESTINO" type="xs:string" />
+							<xs:element name="COMUNA_DESTINO" type="xs:string" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTADO_VIATICO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="NUMERO_CHEQUE" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_CHEQUE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DESCRIPCION_ESTADO_VIATICO" type="xs:string" />
+							<xs:element name="PATENTE_VEHICULO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_VIATICO_NUMERO_MEMORANDUM">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="VIATICO_ID" type="xs:int" />
+							<xs:element name="NRO_MEMORANDUM_INTERNO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MEMORANDUM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ANO" type="xs:short" minOccurs="0" />
+							<xs:element name="MES" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DEPTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="STR_ESTADO_VIATICO" type="xs:string" />
+							<xs:element name="ESTADO_VIATICO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="SELECCIONAR" type="xs:boolean" minOccurs="0" />
+							<xs:element name="EGRESO_ID" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_VIATICO_DETALLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="VIATICO_DETALLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="VIATICO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CANTIDAD_DIAS" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="FECHA_INICIO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_TERMINO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MOTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="PAIS_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="COMUNA_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="EMPLEADO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="NUMERO_DOCUMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_DOCUMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="REGION_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DESTINO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ESTADO_VIATICO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="NUMERO_EGRESO" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ESTADO_TRASPASO_ASISSCAD" type="xs:string" minOccurs="0" />
+							<xs:element name="PATENTE_VEHICULO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSViaticoKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_VIATICO" />
+			<xs:field xpath="mstns:VIATICO_ID" />
+		</xs:unique>
+		<xs:unique name="DSViaticoKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_VIATICO_DETALLE" />
+			<xs:field xpath="mstns:VIATICO_DETALLE_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

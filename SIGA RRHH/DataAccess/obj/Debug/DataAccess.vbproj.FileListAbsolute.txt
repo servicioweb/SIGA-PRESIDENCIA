@@ -1,0 +1,11 @@
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\DataAccess.dll.config
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\DataAccess.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\DataAccess.pdb
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\DataAccess.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\Comun.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\Comun.pdb
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\bin\Comun.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\obj\Debug\DataAccess.vbprojResolveAssemblyReference.cache
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\obj\Debug\DataAccess.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\obj\Debug\DataAccess.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\DataAccess\obj\Debug\DataAccess.pdb

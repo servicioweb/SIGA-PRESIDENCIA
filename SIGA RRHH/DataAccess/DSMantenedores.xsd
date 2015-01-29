@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSMantenedores" targetNamespace="http://tempuri.org/DSMantenedores.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DSMantenedores.xsd" xmlns:mstns="http://tempuri.org/DSMantenedores.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSMantenedores" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_REM_ISAPRE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ISAPRE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ISAPRE_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="RUT_ISAP" type="xs:int" />
+							<xs:element name="DV_ISAP" type="xs:string" />
+							<xs:element name="SISTEMA_PREV_ID" type="xs:unsignedByte" />
+							<xs:element name="DIRECCION" type="xs:string" />
+							<xs:element name="COMUNA_ID" type="xs:short" />
+							<xs:element name="CODIGO_PREVIRED" type="xs:string" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_ANTECEDENTE_PREVIS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ANTECEDENTE_PREVIS_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="EMPLEADO_ID" type="xs:short" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" />
+							<xs:element name="FECHA_ING_SISTEMA_PREVIS" type="xs:dateTime" />
+							<xs:element name="AFP_ID" type="xs:int" />
+							<xs:element name="FECHA_AFILIACION_AFP" type="xs:dateTime" />
+							<xs:element name="MONTO_AHORRO_AFP" type="xs:decimal" />
+							<xs:element name="MONEDA_AHORRO_AFP_ID" type="xs:int" />
+							<xs:element name="MONTO_COTIZACION_VOLUNTARIA_AFP" type="xs:decimal" />
+							<xs:element name="MONEDA_COTIZ_VOLUN_AFP_ID" type="xs:int" />
+							<xs:element name="ISAPRE_ID" type="xs:int" />
+							<xs:element name="FECHA_AFILIACION_ISAPRE" type="xs:dateTime" />
+							<xs:element name="MONTO_ISAPRE" type="xs:decimal" />
+							<xs:element name="MONEDA_MONTO_ISAPRE_ID" type="xs:int" />
+							<xs:element name="PLAN_COMPLEM_ISAPRE" type="xs:decimal" />
+							<xs:element name="MONEDA_PLAN_COMPLEM_ISAPRE_ID" type="xs:int" />
+							<xs:element name="MONTO_PLAN_AUGE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MONEDA_PLAN_AUGE_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="FONDO_A" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FONDO_B" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FONDO_C" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FONDO_D" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FONDO_E" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SALUD_PRAIS" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="TIPO_TRABAJADOR_PREVIRED_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_ANTECEDENTE_LABORAL">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ANTECEDENTE_LABORAL_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="EMPLEADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="CALIDAD_JURIDICA_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTAMENTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CLASIFICACION_EMPLEADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="GRADO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="JEFE_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESCALAFON_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="UBICACION_FISICA_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="NUMERO_TARJETA_MAGNETICA" type="xs:short" minOccurs="0" />
+							<xs:element name="HORARIO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="TIPO_MOVIMIENTO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION_MOVIMIENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MOVIMIENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RESOLUCION_CONTRATO" type="xs:string" minOccurs="0" />
+							<xs:element name="RESOLUCION_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="RESOLUCION_FECHA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_INSTITUCION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_ADMIN_PUBLICA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_CALIDAD_JURIDICA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_ESTAMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_GRADO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DIAS_EN_GRADO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="FECHA_ING_ESCALAFON" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_ING_DEPTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_RETIRO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MOTIVO_RETIRO_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="OBSERVACIONES" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="PUBLICA_WEB" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FUNCIONES_DESEMPENADAS" type="xs:string" minOccurs="0" />
+							<xs:element name="TITULO_PROFESIONAL_EXPERTIZ" type="xs:string" minOccurs="0" />
+							<xs:element name="ESTADO_EMPLEADO_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="PERIODO_ID_CAMBIO_SITUACION" type="xs:short" minOccurs="0" />
+							<xs:element name="ASIGNA_EVALUACION_DESEMPENO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_BANCO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="BANCO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="BANCO_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="CODIGO_ASOCIADO" type="xs:string" />
+							<xs:element name="ES_PRINCIPAL" type="xs:boolean" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFIACCION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_UBICACION_FISICA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="UBICACION_FISICA_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:short" />
+							<xs:element name="UBICACION_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="REGION_ID" type="xs:short" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_CENTRO_COSTO_CONTABLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="CENTRO_COSTO_CONTAB_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="CENTRO_COSTO_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="ANO" type="xs:short" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_CENTRO_COSTO_PRESUPUESTO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="CENTRO_COSTO_PRESUP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="CENTRO_COSTO_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="ANO" type="xs:short" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_TIPO_NIVEL_ESTUDIO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" />
+							<xs:element name="TIPO_NIVEL_ESTUDIO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="TIPO_NIVEL_ESTUDIO_ALIAS" type="xs:unsignedByte" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="USUARIO" type="xs:string" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" />
+							<xs:element name="HORA_MODIFCACION" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_TRAMO_ASIGNACION_FAMILIAR">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TRAMO_ASIGNACION_FAMILIAR_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="CODIGO_PREVIRED" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_APV">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="APV_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="APV_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="APV_RUT" type="xs:int" minOccurs="0" />
+							<xs:element name="APV_DV" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_PREVIRED" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_CALIDAD_JURIDICA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CALIDAD_JURIDICA_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CALIDAD_JURIDICA_ALIAS" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="PERTENECE_EUS" type="xs:boolean" minOccurs="0" />
+							<xs:element name="INCLUYE_CALCULO_SUELDO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="TIPO_DOTACION" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_CLASIFICACION_EMPLEADO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="CLASIFICACION_EMPLEADO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="CLASIFICACION_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_SGI" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ESTAMENTO_DIPRES_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTAMENTO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="APLICA_LEY3551" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ES_PROFESIONAL" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_DEPARTAMENTO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DEPTO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="DEPTO_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="DIRECCION_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="JEFE_DEPTO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="JEFE_SUBROG_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="CENTRO_COSTO_CONTAB_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CENTRO_COSTO_PRESUP_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_NIVEL_ESTUDIO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="NIVEL_ESTUDIO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="NIVEL_ESTUDIO_ALIAS" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO_NIVEL_ESTUDIO_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="APLICA_ANTECEDENTE_CURRICULAR" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_MOTIVO_RETIRO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MOTIVO_RETIRO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="MOTIVO_RETIRO_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="CLASIFICACION_DIRPES" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_SISTEMA_PREVISIONAL">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SISTEMA_PREV_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SISTEMA_PREV_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="FILTRO_TABLA" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_GRADO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="ANO" type="xs:string" minOccurs="0" />
+							<xs:element name="GRADO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="GRADO_ALIAS" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_SGI" type="xs:string" minOccurs="0" />
+							<xs:element name="OLD_GRADO_ID" type="xs:short" minOccurs="0" />
+							<xs:element name="ORDEN" type="xs:int" minOccurs="0" />
+							<xs:element name="SUELDO_BASE" type="xs:int" minOccurs="0" />
+							<xs:element name="ASIG_PROFESIONAL_LEY19185_ART19" type="xs:int" minOccurs="0" />
+							<xs:element name="GRADO_VIATICO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PROCENTAJE_VIATICO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VALOR_VIATICO" type="xs:int" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="GEN_ORGANIZACION">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ORGANIZACION_ALIAS" type="xs:string" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="RUT_ORG" type="xs:int" />
+							<xs:element name="DV_ORG" type="xs:string" />
+							<xs:element name="RAZON_SOCIAL" type="xs:string" />
+							<xs:element name="DIRECCION" type="xs:string" />
+							<xs:element name="PAIS_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="REGION_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="COMUNA_ID" type="xs:int" />
+							<xs:element name="APE_PAT_REP_LEGAL" type="xs:string" />
+							<xs:element name="APE_MAT_LEGAL" type="xs:string" />
+							<xs:element name="NOMBRES_REP_LEGAL" type="xs:string" />
+							<xs:element name="RUT_REP_LEGAL" type="xs:int" />
+							<xs:element name="DV_REP_LEGAL" type="xs:string" />
+							<xs:element name="CARGO_REP_LEGAL" type="xs:string" />
+							<xs:element name="TELEFONO" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_ACTIVIDAD_ECONOMICA" type="xs:string" minOccurs="0" />
+							<xs:element name="APE_PAT_REP_LEGAL_SUBROGANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="APE_MAT_LEGAL_SUBROGANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBRES_REP_LEGAL_SUBROGANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="RUT_REP_LEGAL_SUBROGANTE" type="xs:int" minOccurs="0" />
+							<xs:element name="DV_REP_LEGAL_SUBROGANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="CARGO_REP_LEGAL_SUBROGANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_AFP">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:int" />
+							<xs:element name="AFP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="AFP_ALIAS" type="xs:short" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="SISTEMA_PREV_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="AFP_RUT" type="xs:int" minOccurs="0" />
+							<xs:element name="AFP_DV" type="xs:string" minOccurs="0" />
+							<xs:element name="DIRECCION" type="xs:string" minOccurs="0" />
+							<xs:element name="COMUNA_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CODIGO_EXCAJA" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_PREVIRED" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_AFP_DETALLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DET_AFP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="AFP_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_VIGENCIA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="TASA_DESCUENTO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TASA_SEGURO_INVALIDEZ_SOBREVIVENCIA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DESCUENTO_LEY_19882" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TASA_EX_CAJA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_PROFESION_OFICIO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ORGANIZACION_ID" type="xs:int" />
+							<xs:element name="PROFESION_OFICIO_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="PROFESION_ALIAS" type="xs:int" />
+							<xs:element name="NIVEL_ESTUDIO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+							<xs:element name="USUARIO" type="xs:string" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSMantenedoresKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_ISAPRE" />
+			<xs:field xpath="mstns:ISAPRE_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey6" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_ANTECEDENTE_PREVIS" />
+			<xs:field xpath="mstns:ANTECEDENTE_PREVIS_ID" />
+		</xs:unique>
+		<xs:keyref name="RH_REM_ISAPRERH_PER_ANTECEDENTE_PREVIS" refer="DSMantenedoresKey5">
+			<xs:selector xpath=".//mstns:RH_PER_ANTECEDENTE_PREVIS" />
+			<xs:field xpath="mstns:ISAPRE_ID" />
+		</xs:keyref>
+		<xs:unique name="DSMantenedoresKey7" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_ANTECEDENTE_LABORAL" />
+			<xs:field xpath="mstns:ANTECEDENTE_LABORAL_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_BANCO" />
+			<xs:field xpath="mstns:BANCO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey8" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_UBICACION_FISICA" />
+			<xs:field xpath="mstns:UBICACION_FISICA_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey9" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_CENTRO_COSTO_CONTABLE" />
+			<xs:field xpath="mstns:CENTRO_COSTO_CONTAB_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey10" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_CENTRO_COSTO_PRESUPUESTO" />
+			<xs:field xpath="mstns:CENTRO_COSTO_PRESUP_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey13" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_TIPO_NIVEL_ESTUDIO" />
+			<xs:field xpath="mstns:TIPO_NIVEL_ESTUDIO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey14" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_TRAMO_ASIGNACION_FAMILIAR" />
+			<xs:field xpath="mstns:TRAMO_ASIGNACION_FAMILIAR_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey15" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_APV" />
+			<xs:field xpath="mstns:APV_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey17" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_CALIDAD_JURIDICA" />
+			<xs:field xpath="mstns:CALIDAD_JURIDICA_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey18" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_CLASIFICACION_EMPLEADO" />
+			<xs:field xpath="mstns:CLASIFICACION_EMPLEADO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_DEPARTAMENTO" />
+			<xs:field xpath="mstns:DEPTO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey12" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_NIVEL_ESTUDIO" />
+			<xs:field xpath="mstns:NIVEL_ESTUDIO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey11" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_MOTIVO_RETIRO" />
+			<xs:field xpath="mstns:MOTIVO_RETIRO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey19" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_SISTEMA_PREVISIONAL" />
+			<xs:field xpath="mstns:SISTEMA_PREV_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey16" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_GRADO" />
+			<xs:field xpath="mstns:GRADO_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey20" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:GEN_ORGANIZACION" />
+			<xs:field xpath="mstns:ORGANIZACION_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_AFP" />
+			<xs:field xpath="mstns:AFP_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_AFP_DETALLE" />
+			<xs:field xpath="mstns:DET_AFP_ID" />
+		</xs:unique>
+		<xs:unique name="DSMantenedoresKey21" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_PROFESION_OFICIO" />
+			<xs:field xpath="mstns:PROFESION_OFICIO_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

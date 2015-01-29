@@ -1,0 +1,141 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+siga
+</name>
+</assembly>
+<members>
+<member name="M:cl.presidencia.Argo.WinUI.frmAPV.frmAPV_Load(System.Object,System.EventArgs)">
+	<remarks>
+ frmAPV_Load iniclializa la instacia del DataSet y establece el acceso a la fuente de origen del control gdcAPV.
+ </remarks>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.GetUploadedFiles(System.Data.DataSet@,System.String)">
+	<summary>
+ Gets from the server a list of uploaded files into a dataSet
+ </summary>
+	<param name="ds">The dataset</param>
+	<param name="table">The table in the dataset</param>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.UploadFile(System.String)">
+	<summary>
+ Uploads a file to the database server.
+ </summary>
+	<param name="fileName">The filename of the picture to be uploaded</param>
+	<returns>The id of the file on the server.</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.DownloadFile(System.Int64,System.String@)">
+	<summary>
+ Wrapper for downloading a file from a database.
+ </summary>
+	<param name="kFileName">The Unique ID of the file in database</param>
+	<param name="fileName">The file name as it was stored in the database.</param>
+	<returns>The byte array required OR null if the ID is not found</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.ConnectionString">
+	<summary>
+ Returns the connection string for connecting to the database
+ </summary>
+	<returns>The Connection string.</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.uploadFileToDatabase(System.Byte[],System.String)">
+	<summary>
+ Uploades a file to an SQL Server.
+ </summary>
+	<param name="picture">A byte array that contains the information to be uploaded.</param>
+	<param name="fileName">The file name asociated with that byte array.</param>
+	<returns>The unique ID of the file on the server OR -1 if an error occurs. </returns>
+</member><member name="M:cl.presidencia.Argo.WinUI.TransferPictures.downloadFileFromDatabase(System.Int64,System.String@)">
+	<summary>
+ Downloades a file from a database according to the unique id in that database.
+ </summary>
+	<param name="kFile">The ID of the file in the database</param>
+	<param name="FileName">The filename of the file as it was stored in the database.</param>
+	<returns>A byte array containing the information required.</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI.UtilCrystalReports.UtilReport.setConnection(CrystalDecisions.CrystalReports.Engine.ReportClass@)">
+	<summary>    
+ Establece la conexión a la fuente de datos de origen de los datos.
+ </summary>
+</member><member name="T:cl.presidencia.Argo.WinUI.UtilCrystalReports.UtilReport">
+ ----------------------------------------------------------
+ Proyect : SIGA
+ Class: UtilCrystalReports
+ 
+ ----------------------------------------------------------
+ <summary>    
+     ''' La clase UtilReport provee los métodos para confgiurar correcta generación de reportes generados con Crsytal Reports. 
+ </summary>
+	<history>
+                 [ssepulveda]     10/06/2007  Creada
+                 [ssepulveda]     04/08/2008  Modificado
+ </history>
+</member><member name="M:cl.presidencia.Argo.WinUI.frmAFP.asignacionCampos">
+ Pasa valores del formulario a la capa de la regla de negocios (BisinessRules/Mantenedor).
+
+</member><member name="M:cl.presidencia.Argo.WinUI.frmAFP.validarDatosEncabezado">
+ Valida el ingreso de datos del encabezado del formulario
+
+</member><member name="M:cl.presidencia.Argo.WinUI.frmAFP.inicializarControles">
+ Deja los controles en blanco para ingresar un nuevo registro
+
+</member><member name="M:cl.presidencia.Argo.WinUI.frmAFP.btnNuevo_Click(System.Object,System.EventArgs)">
+ Evento clic del boton nuevo
+
+</member><member name="M:cl.presidencia.Argo.WinUI.frmAFP.btnGrabar_Click(System.Object,System.EventArgs)">
+ Evento clic del botón guardar (encabezado)
+ Guarda o actualiza un registro
+
+</member><member name="P:cl.presidencia.Argo.WinUI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:cl.presidencia.Argo.WinUI.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:cl.presidencia.Argo.WinUI.My.Resources.Resources.SIGA">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="T:cl.presidencia.Argo.WinUI.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.GetUploadedFiles(System.Data.DataSet@,System.String)">
+	<summary>
+ Gets from the server a list of uploaded files into a dataSet
+ </summary>
+	<param name="ds">The dataset</param>
+	<param name="table">The table in the dataset</param>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.UploadFile(System.String)">
+	<summary>
+ Uploads a file to the database server.
+ </summary>
+	<param name="fileName">The filename of the picture to be uploaded</param>
+	<returns>The id of the file on the server.</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.DownloadFile(System.Int64,System.String@)">
+	<summary>
+ Wrapper for downloading a file from a database.
+ </summary>
+	<param name="kFileName">The Unique ID of the file in database</param>
+	<param name="fileName">The file name as it was stored in the database.</param>
+	<returns>The byte array required OR null if the ID is not found</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.ConnectionString">
+	<summary>
+ Returns the connection string for connecting to the database
+ </summary>
+	<returns>The Connection string.</returns>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.uploadFileToDatabase(System.Byte[],System.String)">
+	<summary>
+ Uploades a file to an SQL Server.
+ </summary>
+	<param name="picture">A byte array that contains the information to be uploaded.</param>
+	<param name="fileName">The file name asociated with that byte array.</param>
+	<returns>The unique ID of the file on the server OR -1 if an error occurs. </returns>
+</member><member name="M:cl.presidencia.Argo.WinUI._TransferPictures.downloadFileFromDatabase(System.Int64,System.String@)">
+	<summary>
+ Downloades a file from a database according to the unique id in that database.
+ </summary>
+	<param name="kFile">The ID of the file in the database</param>
+	<param name="FileName">The filename of the file as it was stored in the database.</param>
+	<returns>A byte array containing the information required.</returns>
+</member>
+</members>
+</doc>

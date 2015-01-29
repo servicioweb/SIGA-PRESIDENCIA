@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSRegistroCheques" targetNamespace="http://tempuri.org/DSRegistroCheques.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DSRegistroCheques.xsd"
+	xmlns:mstns="http://tempuri.org/DSRegistroCheques.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSRegistroCheques" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_PER_EMISOR_CHEQUE_DETALLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DETALLE_EMISOR_CHEQUE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="EMISOR_CHEQUE_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CONCEPTO" type="xs:string" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_REGISTRO_CHEQUES_A_EMITIR">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EMISOR_CHEQUE_ID" type="xs:int" />
+							<xs:element name="MOTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBRE_RAZON_SOCIAL" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_CHEQUE" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_CHEQUE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_CHEQUE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DETALLE_ID" type="xs:int" />
+							<xs:element name="NUMERO_CHEQUE" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_CHEQUE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ORIGEN" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_PER_EMISOR_CHEQUE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EMISOR_CHEQUE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="MOTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBRE_RAZON_SOCIAL" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_CHEQUE" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_CHEQUE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NUMERO_EGRESO" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ORGANIZACION_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="TOTAL_CHEQUE" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSRegistroChequesKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_EMISOR_CHEQUE_DETALLE" />
+			<xs:field xpath="mstns:DETALLE_EMISOR_CHEQUE_ID" />
+		</xs:unique>
+		<xs:unique name="DSRegistroChequesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_EMISOR_CHEQUE" />
+			<xs:field xpath="mstns:EMISOR_CHEQUE_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-5868" viewPortTop="1590" zoom="100">
+    <RH_REM_GRADO_XmlElement left="317" top="254" width="5292" height="2805" selected="0" zOrder="1" index="0" expanded="1" />
+    <RH_REM_CENTRALIZACION_XmlElement left="22330" top="1324" width="5292" height="5662" selected="0" zOrder="2" index="1" expanded="1" />
+    <RH_REM_ITEM_XmlElement left="9287" top="3069" width="8890" height="6615" selected="0" zOrder="4" index="2" expanded="1" />
+    <RH_REM_ITEM_AFECTO_ENDEUDAMIENTO_XmlElement left="5086" top="9766" width="5292" height="3281" selected="0" zOrder="6" index="3" expanded="1" />
+    <RH_REM_PERIODO_XmlElement left="-4762" top="3439" width="10212" height="5186" selected="0" zOrder="8" index="4" expanded="1" />
+</XSDDesignerLayout>

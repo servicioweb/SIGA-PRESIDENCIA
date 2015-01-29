@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSCausantesSuseso" targetNamespace="http://tempuri.org/DSCausantesSuseso.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DSCausantesSuseso.xsd"
+	xmlns:mstns="http://tempuri.org/DSCausantesSuseso.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSCausantesSuseso" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="VW_BENEFICIARIOS_SUSESO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RUT_BENEFICIARIO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBRE_BENEFICIARIO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="REGION_BENEFICIARIO" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="COMUNA_BENEFICIARIO" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="ING_PROMEDIO_BENEFICIARIO" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TIPO_BENEFICIARIO" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_CAUSANTES_SUSESO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_CAUSANTE" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="RUT_BENEFICIARIO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBRE_CAUSANTE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="SEXO_CAUSANTE" type="xs:string" />
+							<xs:element name="FECHA_NAC_CAUSANTE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="REGION_CAUSANTE" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="COMUNA_CAUSANTE" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="RUT_CAUSANTE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO_CAUSANTE" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TIPO_BENEFICIO_CAUSANTE" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_CAUSANTE" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="RUT_BENEFICIARIO" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CODIGO_TIPO_BENEFICIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_INICIO_BENEFICIO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_PAGO_BENEFICIO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MONTO_UNITARIO_BENEFICIO" type="xs:int" minOccurs="0" />
+							<xs:element name="PUNTAJE_FICHA_PROTSOCIAL" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TRAMO_ASIGNACION_FAMILIAR" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="DSCausantesSusesoKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VW_BENEFICIARIOS_SUSESO" />
+			<xs:field xpath="mstns:RUT_BENEFICIARIO" />
+		</xs:key>
+		<xs:keyref name="Relacion_Beneficiario_Causantes" refer="DSCausantesSusesoKey1">
+			<xs:selector xpath=".//mstns:VW_CAUSANTES_SUSESO" />
+			<xs:field xpath="mstns:RUT_BENEFICIARIO" />
+		</xs:keyref>
+		<xs:key name="DSCausantesSusesoKey2">
+			<xs:selector xpath=".//mstns:VW_CAUSANTES_SUSESO" />
+			<xs:field xpath="mstns:ID_CAUSANTE" />
+		</xs:key>
+		<xs:keyref name="Relacion_Causante_Beneficios" refer="DSCausantesSusesoKey2">
+			<xs:selector xpath=".//mstns:VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESO" />
+			<xs:field xpath="mstns:ID_CAUSANTE" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

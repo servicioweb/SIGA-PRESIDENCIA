@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="163900" viewPortTop="0" zoom="100">
+    <RH_PER_EMPLEADO_XmlElement left="1317" top="1000" width="7937" height="8996" selected="0" zOrder="4" index="0" expanded="1" />
+    <RH_PER_VIATICO_XmlElement left="9888" top="1000" width="10425" height="2804" selected="0" zOrder="15" index="1" expanded="1" />
+    <RH_PER_VIATICO_DETALLE_XmlElement left="20947" top="1000" width="8678" height="2805" selected="0" zOrder="16" index="2" expanded="1" />
+    <RH_PER_ANTECEDENTE_ACADEM_XmlElement left="30259" top="1000" width="5292" height="2805" selected="0" zOrder="5" index="3" expanded="1" />
+    <RH_REM_MOVIMIENTO_MENSUAL_XmlElement left="36185" top="1000" width="5292" height="2805" selected="0" zOrder="17" index="4" expanded="1" />
+    <RH_PER_ANTECEDENTE_APV_XmlElement left="42111" top="1000" width="5292" height="2805" selected="0" zOrder="18" index="5" expanded="1" />
+    <RH_REM_RELIQUIDACION_XmlElement left="48037" top="1000" width="5292" height="2805" selected="0" zOrder="19" index="6" expanded="1" />
+    <RH_PER_ANTECEDENTE_PREVIS_XmlElement left="53963" top="1000" width="5292" height="2805" selected="0" zOrder="20" index="7" expanded="1" />
+    <RH_PER_EVENTO_ADMIN_SALDO_XmlElement left="59889" top="1000" width="5292" height="2805" selected="0" zOrder="21" index="8" expanded="1" />
+    <RH_PER_EVENTO_ADMIN_XmlElement left="65815" top="1000" width="5292" height="2805" selected="0" zOrder="22" index="9" expanded="1" />
+    <RH_REM_BONO_MODERNIZACION_XmlElement left="71741" top="1000" width="5292" height="2805" selected="0" zOrder="23" index="10" expanded="1" />
+    <RH_PER_ESTRUCTURA_CONTABLE_XmlElement left="77667" top="1000" width="5292" height="2805" selected="0" zOrder="24" index="11" expanded="1" />
+    <RH_PER_EVENTO_ADMIN_DET_XmlElement left="83593" top="1000" width="12012" height="2804" selected="0" zOrder="25" index="12" expanded="1" />
+    <RH_REM_EUS_XmlElement left="96239" top="1000" width="11271" height="2805" selected="0" zOrder="26" index="13" expanded="1" />
+    <VW_EUS_XmlElement left="108144" top="1000" width="9472" height="7091" selected="0" zOrder="27" index="14" expanded="1" />
+    <RH_PER_HORAS_EXTRAS_XmlElement left="132272" top="1000" width="10054" height="6615" selected="0" zOrder="28" index="15" expanded="1" />
+    <RH_PER_HORAS_EXTRAS_APROBADAS_XmlElement left="142960" top="1000" width="10530" height="5662" selected="0" zOrder="29" index="16" expanded="1" />
+    <RH_PER_ANTECEDENTE_CURRI_XmlElement left="154124" top="1000" width="10424" height="4710" selected="0" zOrder="30" index="17" expanded="1" />
+    <RH_PER_LICENCIA_MEDICA_XmlElement left="165182" top="1000" width="9366" height="4233" selected="0" zOrder="10" index="18" expanded="1" />
+    <RH_PER_ESTRUCTURA_ORGANICA_XmlElement left="190263" top="1000" width="10822" height="6138" selected="0" zOrder="1" index="19" expanded="1" />
+    <RH_PER_ANTECEDENTE_LABORAL_XmlElement left="118769" top="1349" width="12594" height="6615" selected="0" zOrder="31" index="20" expanded="1" />
+    <VW_MAESTRO_EMPLEADO_COMPLETO_XmlElement left="165048" top="6930" width="5292" height="3281" selected="0" zOrder="32" index="21" expanded="1" />
+    <RH_PER_ANTECEDENTE_HONORARIO_DETALLE_XmlElement left="204260" top="926" width="16086" height="6614" selected="0" zOrder="2" index="22" expanded="1" />
+    <RH_PER_ANTECEDENTE_REMUN_XmlElement left="174967" top="1058" width="14870" height="6138" selected="0" zOrder="36" index="23" expanded="1" />
+    <RH_PER_EMPLEADORH_PER_LICENCIA_MEDICA_XmlKeyref left="86967" top="4586" width="503" height="503" selected="0" zOrder="11" />
+    <RH_PER_EMPLEADORH_PER_ANTECEDENTE_ACADEM_XmlKeyref left="19505" top="4586" width="503" height="503" selected="0" zOrder="6" />
+</XSDDesignerLayout>

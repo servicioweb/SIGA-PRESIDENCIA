@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+cl.presidencia.seguridad
+</name>
+</assembly>
+<members>
+<member name="M:cl.presidencia.Seguridad.NombreUsuario">
+	<summary>
+ Obtiene el nombre del usuario actualmente conectado al dominio.
+ 
+ </summary>
+</member><member name="M:cl.presidencia.Seguridad.TienePermiso(System.String)">
+	<summary>
+ Retorna valor verdadero o falso para indicar si el usuario activo 
+ pertenece a un grupo de usuarios de SIGA, definido en el dominio.
+ <example>
+			<code> El siguiente ejemplo presenta como es utilizada la función 
+ para validar si una cuenta de usuario activa pertenece a un grupo del dominio
+ If Not Seguridad.tienePermiso("COM-Mantencion Tablas Maestras Personal") Then
+        mnuDepto.Enabled = False
+        mnuUbicacion.Enabled = False
+        mnuRetiro.Enabled = False
+        mnuEstudio.Enabled = False
+ 
+    Else
+        mnuDepto.Enabled = True
+        mnuUbicacion.Enabled = True
+        mnuRetiro.Enabled = True
+        mnuEstudio.Enabled = True
+    End If
+    mnuMantenedor.Enabled = (mnuDepto.Enabled Or mnuUbicacion.Enabled Or mnuRetiro.Enabled Or mnuEstudio.Enabled)
+ </code>
+		</example>
+	</summary>
+</member><member name="M:cl.presidencia.Seguridad.AtributoCuentaDominio(System.String)">
+	<summary>
+ Permite obtener el valor de un atributo definido para una cuenta de Dominio.
+ <param name="atributo">Es utilizado para indicar el nombre del atributo</param>
+		<returns>Retorna un Object</returns>
+	</summary>
+</member><member name="T:cl.presidencia.Seguridad">
+	<summary>
+  Esta clase provee métodos estáticos (que no requieren instancia) 
+  para conocer los datos del contexto de seguridad donde se ejecuta la aplicación.
+ </summary>
+</member>
+</members>
+</doc>

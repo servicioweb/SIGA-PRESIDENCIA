@@ -1,0 +1,8 @@
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\bin\Debug\IndicadoresEconomicos.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\bin\Debug\IndicadoresEconomicos.pdb
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\bin\Debug\IndicadoresEconomicos.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\obj\Debug\IndicadoresEconomicos.Resources.resources
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\obj\Debug\IndicadoresEconomicos.vbproj.GenerateResource.Cache
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\obj\Debug\IndicadoresEconomicos.dll
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\obj\Debug\IndicadoresEconomicos.xml
+D:\Presidencia\SIGA_TFS2014\SIGA RRHH\IndicadoresEconomicos\obj\Debug\IndicadoresEconomicos.pdb

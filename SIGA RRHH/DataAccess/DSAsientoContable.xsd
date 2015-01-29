@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSAsientoContable" targetNamespace="http://tempuri.org/DSAsientoContable.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DSAsientoContable.xsd"
+	xmlns:mstns="http://tempuri.org/DSAsientoContable.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSAsientoContable" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_REM_ASIENTO_CONTABLE_DETALLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DETALLE_ASIENTO_CONTABLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+								type="xs:int" />
+							<xs:element name="ASIENTO_CONTABLE_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="CODIGO_CENTRO_COSTO_CONTABLE" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION_CENTRO_COSTO" type="xs:string" minOccurs="0" />
+							<xs:element name="CUENTA_CONTABLE" type="xs:string" minOccurs="0" />
+							<xs:element name="GLOSA" type="xs:string" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ASIENTO_CONTABLE">
+					<xs:complexType>
+						<xs:sequence>
+						    <xs:element name="NUMERO_ASIENTO_CONTABLE" type="xs:int" minOccurs="0" />
+							<xs:element name="TIPO_PROCESO" type="xs:string" minOccurs="0" />
+							<xs:element name="ANO" type="xs:int" minOccurs="0" />
+							<xs:element name="MES" type="xs:int" minOccurs="0" />
+							<xs:element name="CODIGO_CENTRO_COSTO" type="xs:int" minOccurs="0" />
+							<xs:element name="CUENTA_CONTABLE" type="xs:string" minOccurs="0" />
+							<xs:element name="GLOSA" type="xs:string" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:int" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_CREACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RH_REM_ASIENTO_CONTABLE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ASIENTO_CONTABLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="TIPO_PROCESO" type="xs:string" minOccurs="0" />
+							<xs:element name="ES_COSTO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSAsientoContableKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_ASIENTO_CONTABLE_DETALLE" />
+			<xs:field xpath="mstns:DETALLE_ASIENTO_CONTABLE_ID" />
+		</xs:unique>
+		<xs:unique name="DSAsientoContableKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_REM_ASIENTO_CONTABLE" />
+			<xs:field xpath="mstns:ASIENTO_CONTABLE_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

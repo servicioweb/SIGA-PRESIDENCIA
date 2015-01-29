@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0996FE2-8A23-4E54-A303-633D94C4040F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Reportes</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>cl.presidencia.Argo.Reportes</RootNamespace>
+    <StartupObject>cl.presidencia.Argo.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Reportes.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Reportes.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BonificacionRetiro.vb">
+      <DependentUpon>BonificacionRetiro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptInformeCalculoLicenciaMedica.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInformeCalculoLicenciaMedica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAnexoTrabajadoresAFP.vb">
+      <DependentUpon>rptAnexoTrabajadoresAFP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAnexoTrabajadoresINP.vb">
+      <DependentUpon>rptAnexoTrabajadoresINP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAntiguedadEmpleados.vb">
+      <DependentUpon>rptAntiguedadEmpleados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAporteBienestar.vb">
+      <DependentUpon>rptAporteBienestar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAsientoContable1.vb">
+      <DependentUpon>rptAsientoContable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAsientoContableHistorico.vb">
+      <DependentUpon>rptAsientoContableHistorico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptAsientoContableRevision.vb">
+      <DependentUpon>rptAsientoContableRevision.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBonificacionRetiro.vb">
+      <DependentUpon>rptBonificacionRetiro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptCargasFamiliaresValorizado.vb">
+      <DependentUpon>rptCargasFamiliaresValorizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptChequeCarta.vb">
+      <DependentUpon>rptChequeCarta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptComparaDatosIntranetVsFichaEmpleado1.vb">
+      <DependentUpon>rptComparaDatosIntranetVsFichaEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptConsolidadoItems.vb">
+      <DependentUpon>rptConsolidadoItems.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptControlAsistenciaDepartamento.vb">
+      <DependentUpon>rptControlAsistenciaDepartamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptControlAsistenciaEmpleado.vb">
+      <DependentUpon>rptControlAsistenciaEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEgresoCheque.vb">
+      <DependentUpon>rptEgresoCheque.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEgresos.vb">
+      <DependentUpon>rptEgresos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEgresoViatico.vb">
+      <DependentUpon>rptEgresoViatico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEgresoViaticos1.vb">
+      <DependentUpon>rptEgresoViaticos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEgresoVoucherViatico.vb">
+      <DependentUpon>rptEgresoVoucherViatico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptEndeudamientoEmpleado.vb">
+      <DependentUpon>rptEndeudamientoEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptFichaDelEmpleado.vb">
+      <DependentUpon>rptFichaDelEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptFichaEmpleado.vb">
+      <DependentUpon>rptFichaEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptHaberesPeriodo.vb">
+      <DependentUpon>rptHaberesPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptHorasExtrasPagadasVsRatificadas.vb">
+      <DependentUpon>rptHorasExtrasPagadasVsRatificadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptHorasExtrasPeriodo.vb">
+      <DependentUpon>rptHorasExtrasPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptInfCargasFamiliaresVenc.vb">
+      <DependentUpon>rptInfCargasFamiliaresVenc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptInformeCalculoLicenciaMedicaResumenMaternal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInformeCalculoLicenciaMedicaResumenMaternal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInformeCalculoLicenciaMedicaResumenNormal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInformeCalculoLicenciaMedicaResumenNormal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptLibroHonorarios.vb">
+      <DependentUpon>rptLibroHonorarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLibroHonorariosSuplementaria1.vb">
+      <DependentUpon>rptLibroHonorariosSuplementaria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLibroRemuneraciones.vb">
+      <DependentUpon>rptLibroRemuneraciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLiquidacion.vb">
+      <DependentUpon>rptLiquidacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLiquidacionSuplementaria.vb">
+      <DependentUpon>rptLiquidacionSuplementaria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLiquidoPago.vb">
+      <DependentUpon>rptLiquidoPago.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLiquidosAPago.vb">
+      <DependentUpon>rptLiquidosAPago.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptMovimientoMensual.vb">
+      <DependentUpon>rptMovimientoMensual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptMovimientoMensualporEmpleado.vb">
+      <DependentUpon>rptMovimientoMensualporEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptMutualDeSeguridad.vb">
+      <DependentUpon>rptMutualDeSeguridad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptNominaEmpleados.vb">
+      <DependentUpon>rptNominaEmpleados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptNominaFotoFuncionarios.vb">
+      <DependentUpon>rptNominaFotoFuncionarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptNominaFuncionarios.vb">
+      <DependentUpon>rptNominaFuncionarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptPlanillaCotPrev.vb">
+      <DependentUpon>rptPlanillaCotPrev.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptPlanillaPagoCotSalud.vb">
+      <DependentUpon>rptPlanillaPagoCotSalud.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptRentaPromedioLicMedica.vb">
+      <DependentUpon>rptRentaPromedioLicMedica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResolucionHorasExtras.vb">
+      <DependentUpon>rptResolucionHorasExtras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResolucionHorasExtrasPlanificadas.vb">
+      <DependentUpon>rptResolucionHorasExtrasPlanificadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResolucionViatico.vb">
+      <DependentUpon>rptResolucionViatico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResumenHaberes.vb">
+      <DependentUpon>rptResumenHaberes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResumenPrevisional.vb">
+      <DependentUpon>rptResumenPrevisional.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResumenPrevisionalAPV.vb">
+      <DependentUpon>rptResumenPrevisionalAPV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptResumenSalud.vb">
+      <DependentUpon>rptResumenSalud.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptSeguroInvalidezSobrev.vb">
+      <DependentUpon>rptSeguroInvalidezSobrev.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="BonificacionRetiro.resx">
+      <DependentUpon>BonificacionRetiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonificacionRetiro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BonificacionRetiro.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInformeCalculoLicenciaMedica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInformeCalculoLicenciaMedica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAnexoTrabajadoresAFP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnexoTrabajadoresAFP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAnexoTrabajadoresINP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnexoTrabajadoresINP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAntiguedadEmpleados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAntiguedadEmpleados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAporteBienestar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAporteBienestar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAsientoContable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAsientoContable1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAsientoContableHistorico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAsientoContableHistorico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAsientoContableRevision.resx">
+      <DependentUpon>rptAsientoContableRevision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAsientoContableRevision.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAsientoContableRevision.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBonificacionRetiro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBonificacionRetiro.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCargasFamiliaresValorizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCargasFamiliaresValorizado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptChequeCarta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptChequeCarta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptComparaDatosIntranetVsFichaEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptComparaDatosIntranetVsFichaEmpleado1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptConsolidadoItems.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsolidadoItems.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptControlAsistenciaDepartamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptControlAsistenciaDepartamento.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptControlAsistenciaEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptControlAsistenciaEmpleado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresoCheque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEgresoCheque.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEgresos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresoViatico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEgresoViatico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresoViaticos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEgresoViaticos1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresoVoucherViatico.resx">
+      <DependentUpon>rptEgresoVoucherViatico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEgresoVoucherViatico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEgresoVoucherViatico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEndeudamientoEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEndeudamientoEmpleado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptFichaDelEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFichaDelEmpleado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptFichaEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFichaEmpleado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHaberesPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHaberesPeriodo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHorasExtrasPagadasVsRatificadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHorasExtrasPagadasVsRatificadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHorasExtrasPeriodo.resx">
+      <DependentUpon>rptHorasExtrasPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHorasExtrasPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHorasExtrasPeriodo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInfCargasFamiliaresVenc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInfCargasFamiliaresVenc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInformeCalculoLicenciaMedicaResumenMaternal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInformeCalculoLicenciaMedicaResumenMaternal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInformeCalculoLicenciaMedicaResumenNormal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInformeCalculoLicenciaMedicaResumenNormal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibroHonorarios.resx">
+      <DependentUpon>rptLibroHonorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibroHonorarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLibroHonorarios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibroHonorariosSuplementaria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLibroHonorariosSuplementaria1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibroRemuneraciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLibroRemuneraciones.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLiquidacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLiquidacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLiquidacionSuplementaria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLiquidacionSuplementaria.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLiquidoPago.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLiquidoPago.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLiquidosAPago.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLiquidosAPago.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMovimientoMensual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMovimientoMensual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMovimientoMensualporEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMovimientoMensualporEmpleado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMutualDeSeguridad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMutualDeSeguridad.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptNominaEmpleados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNominaEmpleados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptNominaFotoFuncionarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNominaFotoFuncionarios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptNominaFuncionarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNominaFuncionarios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPlanillaCotPrev.resx">
+      <DependentUpon>rptPlanillaCotPrev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPlanillaCotPrev.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPlanillaCotPrev.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPlanillaPagoCotSalud.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPlanillaPagoCotSalud.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRentaPromedioLicMedica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRentaPromedioLicMedica.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResolucionHorasExtras.resx">
+      <DependentUpon>rptResolucionHorasExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResolucionHorasExtras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResolucionHorasExtras.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResolucionHorasExtrasPlanificadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResolucionHorasExtrasPlanificadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResolucionViatico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResolucionViatico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenHaberes.resx">
+      <DependentUpon>rptResumenHaberes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenHaberes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenHaberes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenPrevisional.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenPrevisional.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenPrevisionalAPV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenPrevisionalAPV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenSalud.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptResumenSalud.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSeguroInvalidezSobrev.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSeguroInvalidezSobrev.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

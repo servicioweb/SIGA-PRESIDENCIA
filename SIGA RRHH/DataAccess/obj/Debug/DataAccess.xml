@@ -1,0 +1,922 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataAccess
+</name>
+</assembly>
+<members>
+<member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEMDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_PERIODODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_RELACIONADO_TRAMOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ZONADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_GRADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_CENTRALIZACIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_AFECTO_ENDEUDAMIENTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEMRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_PERIODORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_RELACIONADO_TRAMOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ZONARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_GRADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_CENTRALIZACIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_AFECTO_ENDEUDAMIENTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEMRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_PERIODORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_RELACIONADO_TRAMOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ZONARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_GRADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_CENTRALIZACIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual.RH_REM_ITEM_AFECTO_ENDEUDAMIENTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensual">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensualTableAdapters.RH_REM_ITEMTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensualTableAdapters.RH_REM_PERIODOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensualTableAdapters.RH_REM_ITEM_RELACIONADO_TRAMOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSParametroMensualTableAdapters.RH_REM_ZONATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_REMUNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EMPLEADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICO_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_ACADEMDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_MOVIMIENTO_MENSUALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_APVDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_RELIQUIDACIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_PREVISDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_SALDODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMINDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_BONO_MODERNIZACIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_CONTABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_DETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_EUSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_EUSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRAS_APROBADASDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_CURRIDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_LICENCIA_MEDICADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_ORGANICADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_MAESTRO_EMPLEADO_COMPLETODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_HONORARIO_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_LABORALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_REMUNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EMPLEADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICO_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_ACADEMRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_MOVIMIENTO_MENSUALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_APVRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_RELIQUIDACIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_PREVISRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_SALDORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMINRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_BONO_MODERNIZACIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_CONTABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_DETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_EUSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_EUSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRAS_APROBADASRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_CURRIRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_LICENCIA_MEDICARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_ORGANICARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_MAESTRO_EMPLEADO_COMPLETORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_HONORARIO_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_LABORALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_REMUNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EMPLEADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_VIATICO_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_ACADEMRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_MOVIMIENTO_MENSUALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_APVRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_RELIQUIDACIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_PREVISRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_SALDORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMINRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_BONO_MODERNIZACIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_CONTABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_EVENTO_ADMIN_DETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_REM_EUSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_EUSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_HORAS_EXTRAS_APROBADASRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_CURRIRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_LICENCIA_MEDICARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ESTRUCTURA_ORGANICARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.VW_MAESTRO_EMPLEADO_COMPLETORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_HONORARIO_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado.RH_PER_ANTECEDENTE_LABORALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleado">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSEmpleadoTableAdapters.RH_PER_ANTECEDENTE_REMUNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:cl.presidencia.Argo.DataAccess.Empleados.Inserta(System.Data.DataRow)">
+	<param name="empleado">Recibe el tipo DataRow, correspondiente a una fila de la Entidad Empleado</param>
+</member><member name="T:cl.presidencia.Argo.DataAccess.Empleados">
+	<summary>
+Empleados corresponde a la clase que permite administrar 
+los datos de funcionarios con la Fuente de Datos
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICOS_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICO_NUMERO_MEMORANDUMDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICO_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICOS_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICO_NUMERO_MEMORANDUMRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICO_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICOS_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.VW_VIATICO_NUMERO_MEMORANDUMRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico.RH_PER_VIATICO_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSViatico">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAnalisisLiquidaciones.VW_ANALISIS_LIQUIDACIONESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAnalisisLiquidaciones.VW_ANALISIS_LIQUIDACIONESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAnalisisLiquidaciones.VW_ANALISIS_LIQUIDACIONESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAnalisisLiquidaciones">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_ISAPREDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_PREVISDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_LABORALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_BANCODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_UBICACION_FISICADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_CONTABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_PRESUPUESTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_TIPO_NIVEL_ESTUDIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_TRAMO_ASIGNACION_FAMILIARDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_APVDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CALIDAD_JURIDICADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CLASIFICACION_EMPLEADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_DEPARTAMENTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_NIVEL_ESTUDIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_MOTIVO_RETIRODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_SISTEMA_PREVISIONALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_GRADODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.GEN_ORGANIZACIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFP_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_PROFESION_OFICIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_ISAPRERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_PREVISRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_LABORALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_BANCORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_UBICACION_FISICARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_CONTABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_PRESUPUESTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_TIPO_NIVEL_ESTUDIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_TRAMO_ASIGNACION_FAMILIARRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_APVRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CALIDAD_JURIDICARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CLASIFICACION_EMPLEADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_DEPARTAMENTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_NIVEL_ESTUDIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_MOTIVO_RETIRORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_SISTEMA_PREVISIONALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_GRADORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.GEN_ORGANIZACIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFP_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_PROFESION_OFICIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_ISAPRERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_PREVISRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_ANTECEDENTE_LABORALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_BANCORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_UBICACION_FISICARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_CONTABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CENTRO_COSTO_PRESUPUESTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_TIPO_NIVEL_ESTUDIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_TRAMO_ASIGNACION_FAMILIARRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_APVRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CALIDAD_JURIDICARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_CLASIFICACION_EMPLEADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_DEPARTAMENTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_NIVEL_ESTUDIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_MOTIVO_RETIRORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_SISTEMA_PREVISIONALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_GRADORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.GEN_ORGANIZACIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_REM_AFP_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores.RH_PER_PROFESION_OFICIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSMantenedores">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCargaFamiliar.RH_PER_CARGA_FAMILIARDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCargaFamiliar.RH_PER_CARGA_FAMILIARRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCargaFamiliar.RH_PER_CARGA_FAMILIARRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCargaFamiliar">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSControlAsistencia.RH_PER_CONTROL_ASISTENCIADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSControlAsistencia.RH_PER_CONTROL_ASISTENCIARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSControlAsistencia.RH_PER_CONTROL_ASISTENCIARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSControlAsistencia">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIARIOS_SUSESODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_CAUSANTES_SUSESODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIARIOS_SUSESORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_CAUSANTES_SUSESORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIARIOS_SUSESORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_CAUSANTES_SUSESORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso.VW_BENEFICIO_ENTIDAD_ADMINISTRADORA_SUSESORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSCausantesSuseso">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUE_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_REGISTRO_CHEQUES_A_EMITIRDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_CHEQUEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUE_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_REGISTRO_CHEQUES_A_EMITIRRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_CHEQUERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUE_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_REGISTRO_CHEQUES_A_EMITIRRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.VW_CHEQUERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques.RH_PER_EMISOR_CHEQUERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSRegistroCheques">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLE_DETALLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.ASIENTO_CONTABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLE_DETALLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.ASIENTO_CONTABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLE_DETALLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.ASIENTO_CONTABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable.RH_REM_ASIENTO_CONTABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DSAsientoContable">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DsMaestroEmpleadosDIPRES.VW_MAESTRO_EMPLEADO_DIPRESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DsMaestroEmpleadosDIPRES.VW_MAESTRO_EMPLEADO_DIPRESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DsMaestroEmpleadosDIPRES.VW_MAESTRO_EMPLEADO_DIPRESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:cl.presidencia.Argo.DataAccess.DsMaestroEmpleadosDIPRES">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

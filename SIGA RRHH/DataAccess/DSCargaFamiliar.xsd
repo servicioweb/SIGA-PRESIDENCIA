@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DSCargaFamiliar" targetNamespace="http://tempuri.org/DSCargaFamiliar.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DSCargaFamiliar.xsd" xmlns:mstns="http://tempuri.org/DSCargaFamiliar.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DSCargaFamiliar" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RH_PER_CARGA_FAMILIAR">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CARGA_FAMILIAR_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="EMPLEADO_ID" type="xs:int" />
+							<xs:element name="NIVEL_ESTUDIO_ID" type="xs:int" />
+							<xs:element name="TIPO_CARGA_FAM_ID" type="xs:int" />
+							<xs:element name="PARENTESCO_ID" type="xs:int" />
+							<xs:element name="GRUPO_FAMILIAR_ID" type="xs:unsignedByte" />
+							<xs:element name="RUT_CARGA" type="xs:int" />
+							<xs:element name="DIGITO_VER_CARGA" type="xs:string" />
+							<xs:element name="APELLIDO_PAT_CARGA" type="xs:string" />
+							<xs:element name="APELLIDO_MAT_CARGA" type="xs:string" />
+							<xs:element name="NOMBRES_CARGA" type="xs:string" />
+							<xs:element name="SEXO_CARGA" type="xs:string" />
+							<xs:element name="FECHA_NACIMIENTO" type="xs:dateTime" />
+							<xs:element name="ESTADO_CARGA_ID" type="xs:unsignedByte" />
+							<xs:element name="FECHA_VIGENCIA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_VENCIMIENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RETENSION_JUDICIAL" type="xs:string" />
+							<xs:element name="CARGA_POR_ESTUDIO" type="xs:string" />
+							<xs:element name="CAUSA_TERMINO_ASIG_FAM_ID" type="xs:unsignedByte" />
+							<xs:element name="ESTADO_REGISTRO" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="TIPO_BENEFICIO_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="TIPO_CAUSANTE_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="XML_CARGACAUSANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="XML_RESPUESTACARGACAUSANTE" type="xs:string" minOccurs="0" />
+							<xs:element name="USUARIO" type="xs:string" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" />
+							<xs:element name="HORA_MODIFICACION" type="xs:string" />
+							<xs:element name="REGIMEN_ESTUDIO" type="xs:int" minOccurs="0" />
+							<xs:element name="FECHA_INICIO_RECONOCIMIENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FECHA_FIN_RECONOCIMIENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NUMERO_RESOLUCION" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO_ID" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DSCargaFamiliarKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RH_PER_CARGA_FAMILIAR" />
+			<xs:field xpath="mstns:CARGA_FAMILIAR_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>
